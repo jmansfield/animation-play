@@ -1,0 +1,22 @@
+.modal, .modal-overlay {
+  visibility: hidden;
+}
+
+.btn {
+  background-color: #00A0D6;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+
+  /* transition: <property> <duration> <timing-function> <delay>; */
+
+   /* transition: background-color 0.4s;Transition one element */
+  transition: background-color 0.4s, color 0.4s; /* Transition two elements */
+  /*transition: all 0.4s; Transition all elements */
+  /*transition: 0.4s; The only required property is the duration */
+
+}
+.btn:hover {
+  background-color: #007DA7;
+  color: red;
+}
