@@ -1,0 +1,18 @@
+.form-input {
+  position: relative;
+  top: 20px;
+}
+.form-input + .form-label {
+  position: relative;
+  padding: 0 1em;
+  cursor: text;
+  color: #6A7989;
+  transform-origin: left center;
+  transition: all 0.3s;
+  top: -12px;
+}
+
+.form-input:focus + .form-label {
+  color: #333333;
+  transform: translateY(-40px) scale(0.8);
+}
