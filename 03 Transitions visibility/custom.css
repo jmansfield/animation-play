@@ -1,0 +1,122 @@
+
+/* ------------------------------------- */
+/*  Modal
+/* ------------------------------------- */
+
+.modal {
+  background: #fff;
+  border-radius: 20px;
+  left: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  width: 400px;
+}
+
+.modal h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.modal-close {
+  font-size: 200%;
+  right: 15px;
+  top: 0;
+  position: absolute;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-header {
+  background: #EEE;
+  padding: 20px 10px;
+}
+
+.modal-overlay {
+  background: HSLA(290, 33%, 47%, 0.90);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* 1.10 */
+/* Initial State */
+.modal,
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+
+/* Active State */
+.modal.active,
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+/* ------------------------------------- */
+/*  Button
+/* ------------------------------------- */
+
+.btn {
+  background: #00A0D6;
+  border: 0;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 3;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all .4s; /* 1.2 */
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+  background: #007DA7;
+  color: #E3E3E3;
+}
+
+span.content {
+ display: block;
+ width: 100%;
+ text-align: center;
+ transition: all .3s; /* 1.7 */
+}
+
+.btn .content {
+  position: absolute;
+}
+
+/* 1.7 */
+.top.content {
+  top: 0px;
+}
+/* 1.7 */
+.bottom.content {
+  top: 50px;
+}
+/* 1.7 */
+.btn:hover .top {
+  top: -50px;
+}
+/* 1.7 */
+.btn:hover .bottom {
+  top: 0px;
+}
