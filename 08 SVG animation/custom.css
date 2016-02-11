@@ -1,0 +1,15 @@
+body .event {
+  background-color: #F3453C;
+}
+svg {
+  width: 100%;
+}
+#Desktop {
+  transform: rotate(-5deg);
+}
+#iPad {
+  transform: rotate(5deg);
+}
+#iPhone {
+  transform: rotate(-10deg);
+}
