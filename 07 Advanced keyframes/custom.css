@@ -8,3 +8,33 @@
     visibility: visible;
   }
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(600px);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+@keyframes slideUpSmall {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.modal-overlay.active {
+  animation: fadeIn .25s forwards;
+}
+.modal.active {
+  animation: slideUp .65s .5s cubic-bezier(0.17, 0.89, 0.32, 1.28) forwards, fadeIn .65s .5s forwards;
+}
+.modal-header h3 {
+  animation: slideUpSmall 0.25s .5s cubic-bezier(0.17, 0.89, 0.32, 1.28) forwards, fadeIn 0.25s 0.8s forwards;
+}
+.modal.active .form-field {
+  animation: slideUpSmall 0.25s .5s cubic-bezier(0.17, 0.89, 0.32, 1.28) forwards, fadeIn 0.25s 0.8s forwards;
+}

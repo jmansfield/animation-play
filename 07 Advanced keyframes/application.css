@@ -866,14 +866,14 @@ img {
 .modal-overlay {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s, visibility 1s;
+  /*transition: opacity 1s, visibility 1s;*/
 }
 
 /* Active State */
 .modal.active,
 .modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
+  /*opacity: 1;
+  visibility: visible;*/
 }
 
 
