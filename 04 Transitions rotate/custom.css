@@ -23,6 +23,10 @@
   right: 15px;
   top: 0;
   position: absolute;
+  transition: transform 2s ease-out;
+}
+.modal-close:hover {
+  transform: rotate(360deg);
 }
 
 .modal-content {

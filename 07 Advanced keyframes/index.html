@@ -8,7 +8,59 @@
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   </head>
   <body>
+    <!-- Nav -->
+    <nav class='nav'>
+      <div class='cell'>
+        <a class='nav-logo' href='/'>
+          <div class='shing'>
+            <img src='img/logo.png' alt='Sweet Lands' />
+          </div>
+        </a>
+        <ul class='nav-menu'>
+          <li><a href='#retweets'>Retweets</a></li>
+          <li><a href='#pictures'>Pictures</a></li>
+          <li><a href='#event'>Upcoming</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Header -->
+    <header class='header'>
+      <div class='cell well'>
+        <h1 class='header-title'>Animation Play (Transition visibility - show modal)</h1>
+        <p class='header-subtitle'>This is the code I created when learning jQuery at <a href="http://campus.codeschool.com/courses/adventures-in-web-animations">http://campus.codeschool.com/courses/adventures-in-web-animations</a></p>
+      </div>
+    </header>
+
+
+    <!-- Contact -->
+    <section class='event'  id='event'>
+      <div class='cell well'>
+        <h2>Upcoming Event</h2>
+        <div class='event-content'>
+          <img src='img/sweetlandia.png' alt='SweetLandia' width='200' />
+          <h3>SweetLandia</h3>
+          <p>
+            Once upon a time, there was a magical place called Sweet Lands — a
+            world we may now only travel to in our imaginations. But one
+            weekend every year, when the sugar cane stalks bend toward the east
+            and the cotton candy is at its swirliest, the Sweetlandia
+            convention brings this wondrous world within reach! So join
+            Sparkles, Pierre, and the rest of the gang for a meeting of the
+            sweet-minded in sunny Omaha, Nebraska! It’s sure to be your
+            sweetest adventure yet.
+          </p>
+          <div class='event-action'>
+            <a href='#' class='btn buy-button'>
+              <span class='top content'>Buy now!</span>
+              <span class='bottom content'>Hurry, Limited Space!</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
     <!-- Register Modal -->
     <div class='modal-overlay'></div>
@@ -28,12 +80,12 @@
             </select>
           </fieldset>
           <fieldset class='form-field'>
-            <input class='form-input' type='text' id='number' />
             <label class='form-label' for='number'>CC Number</label>
+            <input class='form-input' type='text' id='number' />
           </fieldset>
           <fieldset class='form-field'>
-            <input class='form-input' type='text' id='expiration' />
             <label class='form-label' for='expiration'>CC Expiration</label>
+            <input class='form-input' type='text' id='expiration' />
           </fieldset>
           <div class='form-submit'>
             <input class='btn' type='Submit' value='Submit' />
