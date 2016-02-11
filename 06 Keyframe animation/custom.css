@@ -1,0 +1,11 @@
+@keyframes any-name {
+  /* <step 1> {<property: value;>} */
+  0%, 100% {transform: rotate(0deg);}
+  50% {transform: rotate(-10deg);}
+}
+
+#donut {
+  /* animation: <name> <duration> <delay> <iteration> <timing>; */
+  animation: any-name 2s 0s infinite ease-in-out;
+  transform-origin: top center;
+}
