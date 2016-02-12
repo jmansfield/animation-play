@@ -4,12 +4,17 @@ body .event {
 svg {
   width: 100%;
 }
+@keyframes swing {
+  0%, 100% {transform: rotate(-5deg);transform-origin: center;}
+  50% {transform: rotate(5deg);transform-origin: center;}
+}
+
 #Desktop {
-  transform: rotate(-5deg);
+  animation: swing 2s infinite ease-in-out;
 }
 #iPad {
-  transform: rotate(5deg);
+  animation: swing 2s infinite ease-in-out;
 }
 #iPhone {
-  transform: rotate(-10deg);
+  animation: swing 2s infinite ease-in-out;
 }
