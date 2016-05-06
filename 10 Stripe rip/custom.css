@@ -1,0 +1,27 @@
+#wrapper {
+  border: 1px solid purple;
+}
+#iphone-screencast {
+    width: 270px;
+    height: 631px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    margin: 0 auto;
+}
+#iphone {
+    background-image: url(img/perspective@2x.png);
+    background-size: 100% 100%;
+    height: 100%;
+}
+#iphone video.preloaded {
+    opacity: 1;
+}
+
+#iphone video {
+    width: 357px;
+    height: 637px;
+    border-radius: 6px;
+    -webkit-transform: perspective(500px) rotateY(-8deg) scale(.68,.736) translate(-23.26%,-2.5%);
+    transform: perspective(500px) rotateY(-8deg) scale(.68,.736) translate(-23.26%,-2.5%);
+    transition: opacity 1s;
+}
